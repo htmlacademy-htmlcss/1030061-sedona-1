@@ -1697,12 +1697,26 @@ fieldset.booking-price {
  }
 
  .age-minus:focus {
-  outline: #68A2CA;
+  background-color: #cfe5f3;
   }
 
   .age-minus:active {
-    outline: #68A2CA;
+    background-color: #cfe5f3;
   }
+
+  .age-plus:hover {
+    background: transparent;
+      color: #222;
+      border-color: #4676d7;
+   }
+
+   .age-plus:focus {
+    background-color: #cfe5f3;
+    }
+
+    .age-plus:active {
+      background-color: #cfe5f3;
+    }
 
 .age-plus {
   background-image: url(../images/plus.svg);
