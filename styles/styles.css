@@ -1,22 +1,17 @@
 @font-face {
   font-family: "PT Sans";
-
   font-style: normal;
   font-weight: 400;
-
   src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
-
 }
 
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
-
 }
 
 *,
@@ -323,7 +318,7 @@ body {
 }
 
 .advantages-inner-wide {
-  height: 100%
+  height: 100%;
 }
 
 .advantages-inner-narrow {
@@ -406,7 +401,7 @@ body {
   justify-content: center;
 }
 
-.services-conteiner {
+.services-container {
   /* display: flex;
   flex-direction: column; */
   margin: 0;
@@ -580,6 +575,7 @@ body {
   border-radius: 0 4px 4px 0;
   font-size: 20px;
   line-height: 36px;
+  transition: 0.6s;
 }
 
 .button-newsletter:active {
@@ -744,16 +740,16 @@ body {
 
 .button-main:hover {
   background-color: #68a2ca;
- }
+}
 
- .button-main:focus {
-   background-color: #68a2ca;
-  }
+.button-main:focus {
+  background-color: #68a2ca;
+}
 
-  .button-main:active {
-   background-color: #82b3d3;
-   color: rgba(255, 255, 255, 0.3);
-  }
+.button-main:active {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
+}
 
 .breadcrumbs-list {
   font-size: 16px;
@@ -934,7 +930,15 @@ fieldset.booking-price {
 
 .booking-choice-type:hover {
   color: rgba(255, 255, 255, 0.5);
- }
+}
+
+.booking-choice-type:focus {
+  color: rgb(255, 255, 255);
+}
+
+.booking-choice-type:active {
+  color: rgb(255, 255, 255);
+}
 
 .booking-housing-name {
   margin-left: 6px;
@@ -943,6 +947,14 @@ fieldset.booking-price {
 .booking-housing-name:hover {
   color: rgba(255, 255, 255, 0.5);
  }
+
+.booking-housing-name:focus {
+  color: rgb(255, 255, 255);
+}
+
+.booking-housing-name:active {
+  color: rgb(255, 255, 255);
+}
 
 .booking-last {
   margin-top: -5px;
@@ -1087,6 +1099,7 @@ fieldset.booking-price {
   border-radius: 4px;
   background-color: #82b3d3;
   margin-bottom: 32px;
+  transition: 0.6s;
 }
 
 .booking-button-reset {
@@ -1097,21 +1110,25 @@ fieldset.booking-price {
 }
 
 .booking-button-reset:hover {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 1);
+  background-color: transparent;
 }
 
 .booking-button-reset:focus {
-  border: 3px solid #83b3d3;
-  border-radius: 4px;
-  color: #ffffff;
+  background-color: transparent;
+  outline: 3px solid #83b3d3;
 }
 
 .booking-button-reset:active {
+  background-color: transparent;
   color: rgba(255, 255, 255, 0.3);
+  outline: none;
 }
 
 .booking-button-reset:disabled {
-  color: rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
 }
 
 .hotels-container {
@@ -1128,10 +1145,6 @@ fieldset.booking-price {
   margin: 48px 70px 48px;
   padding: 0;
   align-items: center;
-}
-
-.hotel-view-main {
-  border-color: #000000;
 }
 
 .hotel-view-item:hover {
@@ -1204,31 +1217,37 @@ fieldset.booking-price {
 .hotel-net {
   background-image: url(../images/net.svg);
   display: block;
-  width: 16px;
-  height: 14px;
+  width: 100%;
+  height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 16px 14px;
+  border: 2px solid #000000;
+  border-radius: 4px;
 }
 
 .hotel-description {
   background-image: url(../images/description.svg);
   display: block;
-  width: 16px;
-  height: 14px;
+  width: 100%;
+  height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 16px 14px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px
 }
 
 .hotel-list {
   background-image: url(../images/list.svg);
   display: block;
-  width: 16px;
-  height: 14px;
+  width: 100%;
+  height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 16px 14px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
 }
 
 .hotels-catalog {
@@ -1378,6 +1397,7 @@ fieldset.booking-price {
 .button--active {
   background-color: #7db54f;
   padding: 8px 18px;
+  transition: 0.6s;
 }
 
 .button--active:hover {
@@ -1431,6 +1451,7 @@ fieldset.booking-price {
   font-weight: 700;
   justify-content: center;
   height: 60px;
+  transition: 0.6s;
 }
 
 .pagination-link:hover{
@@ -1692,31 +1713,31 @@ fieldset.booking-price {
 
 .age-minus:hover {
   background: transparent;
-    color: #222;
-    border-color: #4676d7;
- }
+  color: #222;
+  border-color: #4676d7;
+}
 
- .age-minus:focus {
+.age-minus:focus {
   background-color: #cfe5f3;
-  }
+}
 
-  .age-minus:active {
-    background-color: #cfe5f3;
-  }
+.age-minus:active {
+  background-color: #cfe5f3;
+}
 
-  .age-plus:hover {
-    background: transparent;
-      color: #222;
-      border-color: #4676d7;
-   }
+.age-plus:hover {
+  background: transparent;
+  color: #222;
+  border-color: #4676d7;
+}
 
-   .age-plus:focus {
-    background-color: #cfe5f3;
-    }
+.age-plus:focus {
+  background-color: #cfe5f3;
+}
 
-    .age-plus:active {
-      background-color: #cfe5f3;
-    }
+.age-plus:active {
+  background-color: #cfe5f3;
+}
 
 .age-plus {
   background-image: url(../images/plus.svg);
@@ -1795,6 +1816,7 @@ fieldset.booking-price {
   border-radius: 10px;
   border: none;
   margin-top: 48px;
+  transition: 0.6s;
 }
 
 .modal-button:hover {

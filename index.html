@@ -71,7 +71,7 @@
                 </p>
               </li>
               <li class="advantages-item advantages-medium">
-                <h3 class="advantages-title advantages-titles--medium advantages-decoration">Красивая <br>дорога</h3>
+                <h3 class="advantages-title advantages-title--medium advantages-decoration">Красивая <br>дорога</h3>
                 <p class="advantages-description">
                   Ехать в Седону из Лас-Вегаса <br>совсем не скучно!
                 </p>
@@ -86,25 +86,25 @@
                 <img class="advantages-image" src="images/devils-bridge.jpg" width="800" height="385"
                   alt="Мост дьявола">
                 <div class="advantages-inner-narrow advantages-inner-wide">
-                  <h3 class="advantages-title advantages-title--dark">Там есть мост дьявола</h3>
+                  <h3 class="advantages-title advantages-title--dark">Там есть <br>мост дьявола</h3>
                   <p class="advantages-description">
-                    Да,по нему можно пройти! <br>Если вы осмелитесь, <br>разумеется
+                    Да, по нему можно пройти! <br>Если вы осмелитесь, <br>разумеется
                   </p>
                 </div>
               </li>
             </ul>
           </section>
           <section class="services">
-            <div class="services-conteiner main-block">
+            <div class="services-container main-block">
               <h2 class="services-title-main main-title">Приезжайте в Седону отдохнуть <br>в комфорте и уюте!</h2>
-              <p>Опытный персонал и качественное обслуживание!</p>
+              <p class="services-description-main main-text">Опытный персонал и качественное обслуживание!</p>
             </div>
 
             <ul class="services-list">
               <li class="services-item advantages-light services-house">
-                <h3 class="services-title advantages-title--light">Жилье</h3>
+                <h3 class="services-title advantages-title--light">Жильё</h3>
                 <p class="services-description">
-                  Рекомендуем пожить в настоящем мотеле, <br>всё как в кино!
+                  Рекомендуем пожить <br>в настоящем мотеле, <br>всё как в кино!
                 </p>
               </li>
               <li class="services-item services-block services-food">
@@ -117,15 +117,14 @@
               <li class="services-item advantages-light services-gift">
                 <h3 class="services-title advantages-title--light">Сувениры</h3>
                 <p class="services-description">
-                  Не только китайского, <br>но и местного <br>производства!
+                  Не только китайского, <br>но и настоящего местного <br>производства!
                 </p>
               </li>
             </ul>
           </section>
           <section class="hotels main-block">
             <h2 class="hotels-title main-title">Заинтересовались?</h2>
-            <p>
-              Укажите предпологаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне
+            <p class="hotel-text main-text">Укажите предпологаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне
             </p>
             <button class="button hotels-button" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
           </section>
@@ -136,7 +135,7 @@
             </p>
 
             <form class="newsletter-form" action="https://htmlacademy.ru" method="post">
-              <input class="newsletter-form-mail" type="text" name="mail" placeholder="Ваш e-mail">
+              <input class="newsletter-form-mail" type="email" name="mail" placeholder="Ваш e-mail">
               <button class="button button-newsletter" type="submit">Подписаться</button>
             </form>
           </section>
@@ -172,9 +171,9 @@
     </div>
 
     <!-- Класс modal-group--opened всплывающее окно -->
-    <div class="modal-group modal-group--opened">
+    <div class="modal-group modal-group--opene">
       <div class="modal modal-auth">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
@@ -182,12 +181,12 @@
           <form class="auth-form" action="#" method="post">
             <div class="date-item">
               <label class="date-name date-name-in" for="check-in">Дата заезда:</label>
-              <input class="date-choice-in" id="check-in" type="text" name="check-in" value="27 апреля 2020">
+              <input class="date-choice-in" id="check-in" type="text" name="check-in" value="27 апреля 2020" required>
               <p class="date-choice-text date-choice-error">Мы не можем отправить вас в прошлое.</p>
             </div>
             <div class="date-item">
               <label class="date-name date-name-out" for="check-out">Дата выезда:</label>
-              <input class="date-choice-out" id="check-out" type="text" name="check-out" value="1 сентября 2023">
+              <input class="date-choice-out" id="check-out" type="text" name="check-out" value="1 сентября 2023" required>
               <p class="date-choice-text">На эти даты есть свободные номера. Пока есть.</p>
             </div>
             <div class="age-choice-list">
@@ -213,7 +212,7 @@
                 <button class="age-plus" type="button"></button>
               </div>
             </div>
-            <button class="modal-button" type="button">Найти</button>
+            <button class="modal-button" type="submit">Найти</button>
           </form>
         </section>
       </div>

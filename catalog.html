@@ -67,22 +67,22 @@
               Гостиницы
             </li>
           </ol>
-          <form class="booking-form" action="#" method="get">
+          <form class="booking-form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="booking-choice">
               <legend class="booking-name">Инфраструктура:</legend>
               <ul class="booking-variants-list">
                 <li class="booking-item">
-                  <input class="booking-choice-in visually-hidden" name="comforts" type="checkbox" checked id="pool">
-                  <span class="control-mark"></span>
+                  <input class="booking-choice-in visually-hidden" name="pool" type="checkbox" checked id="pool">
+                  <span class="control-mark" type="radio" id="pool" name="pool" value="pool" checked></span>
                   <label class="booking-choice-type" for="pool">Бассейн</label>
                 </li>
                 <li class="booking-item">
-                  <input class="booking-choice-in visually-hidden" name="comforts" type="checkbox" checked id="parking">
+                  <input class="booking-choice-in visually-hidden" name="parking" type="checkbox" checked id="parking">
                   <span class="control-mark"></span>
                   <label class="booking-choice-type" for="parking">Парковка</label>
                 </li>
                 <li class="booking-item">
-                  <input class="booking-choice-in visually-hidden" name="comforts" type="checkbox" id="wi-fi">
+                  <input class="booking-choice-in visually-hidden" name="wi-fi" type="checkbox" id="wi-fi">
                   <span class="control-mark"></span>
                   <label class="booking-choice-type booking-last" for="wi-fi">Wi-Fi</label>
                 </li>
@@ -92,18 +92,18 @@
               <legend class="booking-name">Тип Жилья:</legend>
               <ul class="booking-variants-list booking-variants-housing">
                 <li class="booking-type-item">
-                  <input class="booking-housing-type visually-hidden" name="accomodation" type="radio" checked
-                    id="hotels">
+                  <input class="booking-housing-type visually-hidden" name="accommodation" type="radio" checked
+                    id="hotels" value="hotels">
                   <span class="control-mark-hotels"></span>
                   <label class="booking-housing-name" for="hotels">Гостиница</label>
                 </li>
                 <li class="booking-type-item">
-                  <input class="booking-housing-type visually-hidden" name="accomodation" type="radio" id="motels">
+                  <input class="booking-housing-type visually-hidden" name="accommodation" type="radio" id="motels" value="motels" disabled>
                   <span class="control-mark-hotels"></span>
                   <label class="booking-housing-name" for="motels">Мотель</label>
                 </li>
                 <li class="booking-type-item">
-                  <input class="booking-housing-type visually-hidden" name="accomodation" type="radio" id="apartments">
+                  <input class="booking-housing-type visually-hidden" name="accommodation" type="radio" id="apartments" value="apartments">
                   <span class="control-mark-hotels"></span>
                   <label class="booking-housing-name booking-last" for="apartments">Апартаменты</label>
                 </li>
@@ -115,11 +115,11 @@
               <ul class="booking-price-list">
                 <li class="booking-price-item booking-min">
                   <input class="booking-price-choice booking-price-min" type="text" name="from" placeholder="от"
-                    value="0">
+                    value="0" required>
                 </li>
                 <li class="booking-price-item booking-max">
-                  <input class="booking-price-choice booking-price-max" type="text" name="to" placeholder="до"
-                    value="9000">
+                  <input class="booking-price-choice booking-price-max" type="text" required name="to" placeholder="до"
+                    value="9000" required>
                 </li>
               </ul>
 
@@ -152,7 +152,7 @@
               <option value="popular">Сначала популярное</option>
             </select>
             <ul class="hotel-view-list">
-              <li class="hotel-view-main hotel-view-item">
+              <li class="hotel-view-item">
                 <a class="hotel-net" href="#">
                   <span class="visually-hidden">Сетка</span>
                 </a>
@@ -267,7 +267,7 @@
             Только полезная информация и никакого спама,<br>честное бойскаутское!
           </p>
           <form class="newsletter-form" action="#" method="post">
-            <input class="newsletter-form-mail" type="text" name="mail" placeholder="Ваш e-mail">
+            <input class="newsletter-form-mail" type="email" name="mail" placeholder="Ваш e-mail" required>
             <button class="button button-newsletter" type="submit">
               Подписаться
             </button>
