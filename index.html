@@ -171,7 +171,7 @@
     </div>
 
     <!-- Класс modal-group--opened всплывающее окно -->
-    <div class="modal-group modal-group--opene">
+    <div class="modal-group modal-group--opened">
       <div class="modal modal-auth">
         <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
@@ -181,12 +181,12 @@
           <form class="auth-form" action="#" method="post">
             <div class="date-item">
               <label class="date-name date-name-in" for="check-in">Дата заезда:</label>
-              <input class="date-choice-in" id="check-in" type="text" name="check-in" value="27 апреля 2020" required>
+              <input class="date-choice-in" id="check-in" type="text" name="check-in" value="27 апреля 2020" placeholder="Укажите дату" required>
               <p class="date-choice-text date-choice-error">Мы не можем отправить вас в прошлое.</p>
             </div>
             <div class="date-item">
               <label class="date-name date-name-out" for="check-out">Дата выезда:</label>
-              <input class="date-choice-out" id="check-out" type="text" name="check-out" value="1 сентября 2023" required>
+              <input class="date-choice-out" id="check-out" type="text" name="check-out" value="1 сентября 2023" placeholder="Укажите дату" required>
               <p class="date-choice-text">На эти даты есть свободные номера. Пока есть.</p>
             </div>
             <div class="age-choice-list">
