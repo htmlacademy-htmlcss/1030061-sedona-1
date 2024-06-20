@@ -124,7 +124,8 @@
           </section>
           <section class="hotels main-block">
             <h2 class="hotels-title main-title">Заинтересовались?</h2>
-            <p class="hotel-text main-text">Укажите предпологаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне
+            <p class="hotel-text main-text">Укажите предпологаемые даты поездки, <br>и мы покажем вам лучшие предложения
+              гостиниц в Седоне
             </p>
             <button class="button hotels-button" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
           </section>
@@ -171,7 +172,7 @@
     </div>
 
     <!-- Класс modal-group--opened всплывающее окно -->
-    <div class="modal-group modal-group--opene">
+    <div class="modal-group modal-group--opened">
       <div class="modal modal-auth">
         <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
@@ -181,21 +182,26 @@
           <form class="auth-form" action="#" method="post">
             <div class="date-item">
               <label class="date-name date-name-in" for="check-in">Дата заезда:</label>
-              <input class="date-choice-in" id="check-in" type="text" name="check-in" value="27 апреля 2020" placeholder="Укажите дату" required>
+              <input class="date-choice-in" id="check-in" type="text" name="check-in" value="27 апреля 2020"
+                placeholder="Укажите дату" required>
               <p class="date-choice-text date-choice-error">Мы не можем отправить вас в прошлое.</p>
             </div>
             <div class="date-item">
               <label class="date-name date-name-out" for="check-out">Дата выезда:</label>
-              <input class="date-choice-out" id="check-out" type="text" name="check-out" value="1 сентября 2023" placeholder="Укажите дату" required>
+              <input class="date-choice-out" id="check-out" type="text" name="check-out" value="1 сентября 2023"
+                placeholder="Укажите дату" required>
               <p class="date-choice-text">На эти даты есть свободные номера. Пока есть.</p>
             </div>
             <div class="age-choice-list">
               <div class="age-choice-item">
                 <label class="age-choice-name age-adults" for="adults">Взрослые:</label>
                 <button class="age-minus" type="button">
+                  <span class="visually-hidden">Уменьшает взрослых</span>
                 </button>
                 <input class="age-choice-adults" id="adults" type="text" name="adults" value="2">
-                <button class="age-plus" type="button"></button>
+                <button class="age-plus" type="button">
+                  <span class="visually-hidden">Прибавляет взрослых</span>
+                </button>
               </div>
               <div class="age-choice-item">
                 <label class="age-choice-name age-childs" for="childs">Дети:</label>
@@ -207,9 +213,13 @@
                     Дети
                     до 6 лет размещаются бесплатно.</p>
                 </div>
-                <button class="age-minus" type="button"></button>
+                <button class="age-minus" type="button">
+                  <span class="visually-hidden">Уменьшает детей</span>
+                </button>
                 <input class="age-choice-childs" id="childs" type="text" name="childs" value="2">
-                <button class="age-plus" type="button"></button>
+                <button class="age-plus" type="button">
+                  <span class="visually-hidden">Увеличивает детей</span>
+                </button>
               </div>
             </div>
             <button class="modal-button" type="submit">Найти</button>
