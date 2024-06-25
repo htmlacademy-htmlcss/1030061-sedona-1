@@ -318,8 +318,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-grow: 1;
-  min-width: 399px;
+  width: 400px;
 }
 
 .advantages-image {
@@ -334,7 +333,6 @@ body {
 
 .advantages-description {
   margin: 0;
-  max-width:400px;
 }
 
 .advantages-item.advantages-item-wide {
@@ -342,6 +340,7 @@ body {
   padding: 0;
   flex-direction: row;
   justify-content: space-between;
+  width: 1200px;
 }
 
 .advantages-inner-wide {
@@ -847,27 +846,19 @@ body {
   margin-left: 3px;
 }
 
-.control-mark:hover {
-  background-color: #e5e5e5;
- }
-
- .control-mark:focus {
-  outline: 3px solid #83b3d3;
-  }
-
-  .control-mark:active {
-  outline: 2px solid #83b3d3;
-  }
-
 .control-mark {
   display: block;
-  width: 20px;
+  min-width: 20px;
   height: 20px;
   border-radius: 4px;
   border: 1px solid #ffffff;
   margin: 2px 10px 2px 0;
   position: relative;
   background-color: #ffffff;
+}
+
+.booking-item:hover {
+  opacity: 0.7;
 }
 
 .booking-choice-in + .control-mark::before {
@@ -885,6 +876,10 @@ body {
   left: -1px;
 }
 
+.booking-item input.booking-choice-in:disabled {
+  pointer-events: none;
+}
+
 .booking-choice-in:checked + .control-mark::before {
   content: "";
   display: block;
@@ -892,6 +887,14 @@ body {
 
 .booking-choice-in:focus + .control-mark {
   outline: 3px solid #83b3d3;
+}
+
+.booking-choice-in:active + .control-mark {
+  opacity: 0.7;
+}
+
+.booking-choice-in:hover + .control-mark {
+  opacity: 0.7;
 }
 
 .booking-housing-type:focus + .control-mark-hotels {
@@ -904,6 +907,10 @@ body {
   margin-left: 3px;
 }
 
+.booking-type-item:hover {
+  opacity: 0.7;
+}
+
 .control-mark-hotels {
   display: block;
   width: 20px;
@@ -914,18 +921,6 @@ body {
   position: relative;
   background-color: #ffffff;
 }
-
-.control-mark-hotels:hover {
-  background-color: #e5e5e5;
- }
-
- .control-mark-hotels:focus {
-  outline: 3px solid #83b3d3;
-  }
-
-  .control-mark-hotels:active {
-  outline: 2px solid #83b3d3;
-  }
 
 .booking-housing-type + .control-mark-hotels::before {
   content: "";
@@ -963,32 +958,8 @@ fieldset.booking-price {
   margin-left: 6px;
 }
 
-.booking-choice-type:hover {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.booking-choice-type:focus {
-  color: rgb(255, 255, 255);
-}
-
-.booking-choice-type:active {
-  color: rgb(255, 255, 255);
-}
-
 .booking-housing-name {
   margin-left: 6px;
-}
-
-.booking-housing-name:hover {
-  color: rgba(255, 255, 255, 0.5);
- }
-
-.booking-housing-name:focus {
-  color: rgb(255, 255, 255);
-}
-
-.booking-housing-name:active {
-  color: rgb(255, 255, 255);
 }
 
 .booking-last {
