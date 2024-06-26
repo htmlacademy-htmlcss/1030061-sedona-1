@@ -158,13 +158,14 @@ body {
 }
 
 .navigation-link-search {
+  padding: 25px 5px;
   background-image: url("../images/header/search.svg");
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 35px;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 20px 20px;
   position: relative;
   margin: -5px;
   transition: 0.6s;
@@ -183,13 +184,14 @@ body {
 }
 
 .navigation-link-favorites {
+  padding: 25px 5px;
   background-image: url("../images/header/heart.svg");
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 35px;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 20px 20px;
   position: relative;
   margin: -5px;
 }
