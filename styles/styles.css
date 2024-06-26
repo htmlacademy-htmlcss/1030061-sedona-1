@@ -878,8 +878,14 @@ body {
   left: -1px;
 }
 
-.booking-item input.booking-choice-in:disabled {
+.booking-choice-in[disabled] + .control-mark {
   pointer-events: none;
+  opacity: 0.1;
+}
+
+.booking-choice-in[disabled] ~ .booking-choice-type {
+  pointer-events: none;
+  opacity: 0.1;
 }
 
 .booking-choice-in:checked + .control-mark::before {
@@ -901,6 +907,16 @@ body {
 
 .booking-housing-type:focus + .control-mark-hotels {
   outline: 3px solid #83b3d3;
+}
+
+.booking-housing-type[disabled] + .control-mark-hotels {
+  pointer-events: none;
+  opacity: 0.1;
+}
+
+.booking-housing-type[disabled] ~ .booking-housing-name {
+  pointer-events: none;
+  opacity: 0.1;
 }
 
 .booking-type-item {
